@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app = 'Myapp'>
+<head>
+    <title>Kenny Lau</title>
+    <script src="./library/bower_components/angular/angular.min.js"/></script>
+    <script src="./library/bower_components/angular-route/angular-route.min.js"/></script>
+    <script src="./library/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="./library/bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./library/bower_components/bootstrap-css/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/tree.css">
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/projects.css">
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/contact.css">
+    <script src='app.js'></script> <!-- must include -->
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+    <script src = "controllers/dashController.js"></script>
+</head> 
+
+<body>
+        <div ng-include="'partials/includes/_navbar.html'"></div>
+        <div ng-view></div>
+        <div ng-include="'partials/includes/_footer.html'" class="footer"></div>
+
+</body>
+</html>

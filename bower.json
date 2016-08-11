@@ -1,0 +1,12 @@
+{
+  "name": "websitefrontend",
+  "version": "0.0.7",
+  "dependencies": {
+    "angular": "~1.5",
+    "angular-route": "^1.5.8",
+    "angular-bootstrap": "^2.0.0",
+    "bootstrap-css": "^3.3.6",
+    "angular-loadscript": "*",
+    "oclazyload": "^1.0.9"
+  }
+}

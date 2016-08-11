@@ -1,0 +1,43 @@
+.projects img{ 
+	height: 150px;
+	widows: 100px;
+	/*border-radius: 70px;*/
+	margin: 0 auto;
+}
+#projectheader {
+  background: linear-gradient(to bottom right, #FFEBCD, #C2E3FB);
+}
+#projectcontainer{
+	max-height: 700px;
+	min-height: 650px;
+	height: 100%;	
+	/*padding: 5px;*/
+}
+#ping{
+	min-height: 600px;
+	max-height: 680px;
+	height: 100%;
+	border-right: 1px solid black;
+}
+#stock{
+	min-height: 600px;
+	max-height: 680px;
+	height: 100%;
+	border-right: 1px solid black;
+}
+#doc{
+	min-height: 600px;
+	max-height: 680px;
+	height: 100%;
+	border-right: 1px solid black;
+}
+#gold{
+	min-height: 600px;
+	max-height: 680px;
+	height: 100%;
+}
+.project{
+	/*margin-top: 0px;*/
+	padding: 25px;
+	background-color: white;	
+}
