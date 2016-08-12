@@ -1,7 +1,7 @@
 var myApp = angular.module('Myapp', ["ngRoute","oc.lazyLoad"]);
 
 (function(){
-	myApp.config(function($routeProvider){
+	myApp.config(function($routeProvider, $locationProvider){
 
 		$routeProvider
 			.when('/', 
@@ -23,6 +23,7 @@ var myApp = angular.module('Myapp', ["ngRoute","oc.lazyLoad"]);
 			})
 			.otherwise({
 				redirectTo: "/"
-			})
+			});
+		$locationProvider.html5Mode(true);
 	})
 }());
