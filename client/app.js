@@ -1,4 +1,4 @@
-var myApp = angular.module('Myapp', ["ngRoute","oc.lazyLoad"]);
+var myApp = angular.module('Myapp', ["ngRoute","oc.lazyLoad", "ui.bootstrap"]);
 
 (function(){
 	myApp.config(function($routeProvider, $locationProvider){
@@ -6,16 +6,17 @@ var myApp = angular.module('Myapp', ["ngRoute","oc.lazyLoad"]);
 		$routeProvider
 			.when('/', 
 			{
+				controller: 'homeController',
 				templateUrl: "partials/home.html"
 			})
-			.when('/skills', 
+			.when('/aboutme', 
 			{
 				controller: 'dashController',
-				templateUrl: "partials/skills.html"
+				templateUrl: "partials/aboutme.html"
 			})
-			.when('/projects', 
+			.when('/portfolio', 
 			{
-				templateUrl: "partials/projects.html"
+				templateUrl: "partials/portfolio.html"
 			})
 			.when('/contact', 
 			{
@@ -24,6 +25,18 @@ var myApp = angular.module('Myapp', ["ngRoute","oc.lazyLoad"]);
 			.otherwise({
 				redirectTo: "/"
 			});
-		$locationProvider.html5Mode(true);
+		
+			 //check browser support
+	        if(window.history && window.history.pushState){
+	            //$locationProvider.html5Mode(true); will cause an error $location in HTML5 mode requires a  tag to be present! Unless you set baseUrl tag after head tag like so: <head> <base href="/">
+
+		        // to know more about setting base URL visit: https://docs.angularjs.org/error/$location/nobase
+
+		        // if you don't wish to set base URL then use this
+		        $locationProvider.html5Mode({
+		                 enabled: true,
+		                 requireBase: false
+		        });
+	        }
 	})
 }());

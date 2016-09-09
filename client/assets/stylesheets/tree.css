@@ -24,10 +24,78 @@ svg{
     margin: auto;
 }
 /*skils page*/
-#skillsheader{
+/*#skillsheader{
     background: linear-gradient(to bottom right, #FFEBCD, #C2E3FB);
+   
 }
 #fontawesome{
     color: green;
     padding: 20px 30px 0px 0px;
+}*/
+
+
+
+/*************** new about me page updates!!!***********/
+#me{
+    border-radius: 50%;
+    /*height: 300px;*/
+    /*width: 300px;*/
+}
+
+/* row with circles*/
+#one{
+    background-color: #8CA293;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+#two{
+    background-color: #FFEBCD;
+    height: 200px;
+    border-radius: 50%;
+}
+#three{
+    background-color: #D4A29F;
+    height: 200px;
+    border-radius: 50%;
+}
+#four{
+    background-color: #C2E3FB;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+/* end of the circles */
+
+.service-icon {
+    margin-bottom: 20px;
+}
+.service-icon img{
+    height: 70px;
+    width: 70px;
+}
+
+@media (max-width:950px){
+    #one{
+        /*width: 200px;*/
+        display: none;
+    }
+    #two{
+        display: none;
+    }
+    #three{
+        display: none;
+    }
+    #four{
+        display: none;
+    }
+    #me{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+}
+
+#space {
+    padding-top: 100px;
 }

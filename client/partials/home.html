@@ -1,25 +1,25 @@
-<header class="jumbotron" id="homeheader">
+<header class="jumbotron text-center" id="homeheader">
 	<h1 id="hi">Hi. I'm </h1>
 	<h1 id="myname">Kenny Lau.</h1>
 </header>
 
-<div class="container" id="homebackground">
-
-		<a href="#/skills">
+<div class="container">
+<!-- 
+		<a href="/skills">
 			<div id="greencircle" class="circles text-center">
 				<p>GitHub</p>
 				<p>Sublime</p>
 			</div>
 		</a>
 
-		<a href="#/skills">
+		<a href="/skills">
 			<div id="pinkcircle" class="circles text-center">
 				<p>Angular</p>
 				<p>Bootstrap</p>
 			</div>
 		</a>
 
-		<a href="/#contact"><img src="./assets/images/fieldpic.png" id="fieldpic" /></a>
+		<a href="/contact"><img src="./assets/images/fieldpic.png" id="fieldpic" /></a>
 		
 	<div id="aboutmecircle" class="circles">
 		<h5 class="text-center">About Me</h5>
@@ -39,15 +39,29 @@
 			</div>
 	</div>
 		
-		<a href="#/projects"><img src="./assets/images/blackbelt.png" id="projectcircle"></a>
+		<a href="/projects"><img src="./assets/images/blackbelt.png" id="projectcircle"></a>
 
-		<a href="#/skills">
+		<a href="/skills">
 			<div id="languagecircle" class="circles text-center">
 				<h4>PHP</h4>
 				<h4>Javascript</h4>
 				<h4>Ruby</h4>
 			</div>
-		</a>	
+		</a> -->	
+
+<div style="height: 305px">
+    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+    	<div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+        	<img ng-src="{{slide.image}}" style="margin:auto;">
+        	<div class="carousel-caption">
+          		<!-- <h4>Slide {{slide.id}}</h4> -->
+          		<h2 style="color:black">{{slide.text}}</h2>
+        	</div>
+      </div>
+    </div>
+</div>
+  
+     
 
 		
 </div>	<!--end on container -->	
