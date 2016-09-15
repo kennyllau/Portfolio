@@ -19,7 +19,7 @@ body{
   max-height: 50px;
   height: 10%;
   padding-top: 10px;
-  background-color: rgb(145, 150, 158);
+  /*background-color: rgb(145, 150, 158);*/
   /*background-color: white;*/
 }
 #navbar a{
@@ -33,7 +33,7 @@ body{
   height: 100%;
   padding-top: 15px;
   /*background-color: #2E2E2E;*/
-  background-color: rgb(145, 150, 158);
+  /*background-color: rgb(145, 150, 158);*/
 }
 #footer p{
   display: inline-block;
